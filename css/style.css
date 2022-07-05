@@ -54,7 +54,7 @@ img {
   text-decoration: none;
 }
 
-.hero-section {
+.hero-container {
   padding-top: 70px;
   padding-bottom: 71px;
   max-width: 1140px;
@@ -151,7 +151,7 @@ img {
   margin-right: 7px;
 }
 .button {
-  min-width: 250px;
+  max-width: 250px;
   padding: 22px 50px;
   font-size: 16px;
   line-height: 1.2;
@@ -191,8 +191,8 @@ img {
   font-size: 32px;
   line-height: 1.2;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 36px;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 
 .about-book_text {
@@ -251,7 +251,7 @@ img {
   flex-basis: 100%;
 }
 .readers {
-  margin: 87px 0;
+  padding: 109px 0;
 }
 
 .readers-container {
@@ -321,4 +321,236 @@ img {
   background-color:#fff;
   right: 20px;
   bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .header-container,
+  .about-container,
+  .footer-container,
+  .readers-container,
+  .hero-container {
+    max-width: 960px;
+  }
+  .reader {
+    height: 139px;
+    width: 139px;
+  }
+  .hero-section_text {
+    margin-left: 29px;
+    max-width: 59%;
+  }
+  .book-image_block {
+    max-width: 390px;
+  }
+  .about-book {
+    max-width: 367px;
+  }
+  .readers {
+    padding-bottom: 94px;
+    padding-top: 69px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-container,
+  .about-container,
+  .footer-container,
+  .readers-container,
+  .hero-container{
+    max-width: 760px;
+  }
+  .nav {
+    display: none;
+  }
+  
+  .book-image_block {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .author {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+  .age,
+  .format {
+    flex-grow: 1;
+  }
+  .info {
+    margin-bottom: 39px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 20px 40px;
+  }
+  .sale-price {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+  .price {
+    margin-bottom: 39px;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .about-book {
+    max-width: 100%;
+    margin-bottom: 62px;
+  }
+  .about-author {
+    max-width: 100%;
+  }
+  .reader:nth-child(11) {
+    display: none;
+  }
+  .reader:nth-child(12) {
+    display: none;
+  }
+  .requisites {
+    margin-right: 60px;
+  }
+  .information {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .header-container,
+  .about-container,
+  .footer-container,
+  .readers-container,
+  .hero-container {
+    max-width: 560px;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+  }
+  .book-image_block {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+  .book-image_block img {
+    min-width: 100%;
+  }
+  .sale-price {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .hero-section_text {
+    min-width: 100%;
+  }
+  .button {
+    font-size: 14px;
+    padding: 20px 50px;
+  }
+  .reader:nth-child(10) {
+    display: none;
+  }
+
+  .reader:nth-child(9) {
+    display: none;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .requisites {
+    margin-right: 50px;
+  }
+
+  .information {
+    margin-right: 36px;
+  }
+  .totop {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .header-container,
+  .about-container,
+  .footer-container,
+  .readers-container,
+  .hero-container {
+    max-width: 360px;
+  }
+  .author {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 31px;
+  }
+  .info {
+    font-size: 16px;
+    flex-direction: column;
+  }
+  .favorite {
+    font-size: 0;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    max-width: 360px;
+  }
+  .button {
+    min-width: 96%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .about-author {
+    padding: 54px 43px;
+    align-items:center;
+  }
+  .author-avatar {
+    width: 63px;
+    height: 66px;
+    margin-right: 16px;
+  }
+  .author-bio {
+    margin-bottom: 5px;
+  }
+  .author-link {
+    font-size: 14px;
+  }
+  .about-author_text {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  .readers-photo {
+    flex-wrap: wrap;
+  }
+  .reader {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 15px;
+  }
+  .reader:nth-child(7) {
+    display: none;
+  }
+
+  .reader:nth-child(8) {
+    display: none;
+  }
+  .reader:nth-child(9) {
+    display: none;
+  }
+  .requisites {
+    margin-bottom: 36px;
+  }
+
+  .information {
+    margin-bottom: 36px;
+  }
 }
